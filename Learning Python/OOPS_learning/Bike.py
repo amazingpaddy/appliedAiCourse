@@ -13,3 +13,4 @@ class Bike(Vehicle):
 
 bike = Bike()
 bike.go()
+bike.apply_break()
