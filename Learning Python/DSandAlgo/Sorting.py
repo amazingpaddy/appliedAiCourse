@@ -17,5 +17,5 @@ def insertion_sort(input_lst: list):
                 break
     print(input_lst)
 
-input_list = [7, 88, 15, 4, 22, 21, 78, 65, 1, 27, 6, 2, 95, 41]
+input_list = [7, 88, 15, 4, 22, 22, 22, 65, 1, 27, 6, 2, 95, 22]
 insertion_sort(input_list)
