@@ -1,7 +1,8 @@
 from OOPS_learning.Item import Item
 from OOPS_learning.Phone import Phone
 
-print(f"Class variable pay_rate = {Item.pay_rate}")  # Access class attribute using class name.
+# Access class attribute using class name.
+print(f"Class variable pay_rate = {Item.pay_rate}")
 iPhone = Item("Iphone", 888, 6)
 print(
     f"Class variable accessed from iphone instance - {iPhone.pay_rate}")  # We can access class attribute using
