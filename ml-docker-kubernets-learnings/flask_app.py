@@ -8,8 +8,7 @@ from flasgger import Swagger
 
 app = Flask(__name__)
 Swagger(app)
-path = "/home/paddy/python_ws/appliedAiCourse/ml-docker-kubernets-learnings/"
-pickle_in = open(path + 'classifier.pkl', 'rb')
+pickle_in = open('classifier.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
 @app.route('/')
@@ -70,4 +69,4 @@ def predict_note_authentication_from_file():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=8000)
