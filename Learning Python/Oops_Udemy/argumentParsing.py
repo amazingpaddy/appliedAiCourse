@@ -1,5 +1,7 @@
 import sys
+from getopt import getopt
 
-print(sys.argv)
+opts, args = getopt(sys.argv[1:], "f:m:t:")
 
-print(sys.argv[0])
+print(f"args are {args}")
+print(f"optional args are {dict(opts)}")
