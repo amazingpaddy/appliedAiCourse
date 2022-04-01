@@ -1,5 +1,5 @@
 import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-print("Hello World")
-print(np.arange(0, 5))
+
+x = np.array([12, 43, 2, 100, 54, 5, 68])
+print(np.argsort(x))
+print(np.argsort(x)[-2:][::-1])
