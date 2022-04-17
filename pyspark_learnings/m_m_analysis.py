@@ -1,6 +1,6 @@
 import sys
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import count
+
 
 def start():
     print("Application starting..")
@@ -12,6 +12,7 @@ def start():
     data.show()
     data.where(data.age > 28).show()
     data.rdd.map(lambda r: print(type(r)))
+
 
 if __name__ == "__main__":
     start()
